@@ -14,7 +14,7 @@ public partial class Form1 : Form
 
     private void btnSavenSub_Click(object sender, EventArgs e)
     {
-        StreamWriter file = new StreamWriter(@"C:\Users\user\Documents\Contact\KonohaVisitors.txt",true);
+        StreamWriter file = new StreamWriter(@"C:\Users\user\Documents\Contact\KonohaVisitors.txt");
         //Personal Information Section
         file.WriteLine(DDateofVisit.Value.ToString("o"));
         file.WriteLine(TxtBoxNm.Text);
