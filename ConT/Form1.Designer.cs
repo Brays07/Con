@@ -87,7 +87,6 @@
             this.btnSavenSub = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.DDateofVisit = new System.Windows.Forms.DateTimePicker();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnNextPage = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.grpbxSex.SuspendLayout();
@@ -718,15 +717,6 @@
             this.DDateofVisit.Size = new System.Drawing.Size(200, 23);
             this.DDateofVisit.TabIndex = 45;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 46;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // btnNextPage
             // 
             this.btnNextPage.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -745,7 +735,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(824, 640);
             this.Controls.Add(this.btnNextPage);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.DDateofVisit);
             this.Controls.Add(this.btnSavenSub);
             this.Controls.Add(this.groupBox8);
@@ -863,7 +852,6 @@
         private Button btnSavenSub;
         private DataGridView dataGridView1;
         private DateTimePicker DDateofVisit;
-        private Button button1;
         private Button btnNextPage;
     }
 }
