@@ -14,8 +14,10 @@ public partial class Form1 : Form
 
     private void btnSavenSub_Click(object sender, EventArgs e)
     {
-        StreamWriter file = File.AppendText(@"C:\Users\user\Documents\Contact\KonohaVisitors.txt");
+        StreamWriter file = new StreamWriter(@"C:\Users\user\Documents\Contact\KonohaVisitors.txt",true);
         //Personal Information Section
+        file.WriteLine(DDateofVisit.Value.ToString("o"));
+        file.WriteLine(TxtBoxNm.Text);
         file.WriteLine("-----PERSONAL INFORMATION-----");
         file.WriteLine("Name: " + TxtBoxNm.Text);
         file.WriteLine("Age: " + TxtboxAge.Text);
@@ -29,7 +31,7 @@ public partial class Form1 : Form
         }
         file.WriteLine("Phone #: " + TxtboxPhNum.Text);
         file.WriteLine("Address: " + TxtboxAdd.Text);
-        file.WriteLine("Date of Visit: " + DateVisit.Text);
+        file.WriteLine("Date of Visit: " + DDateofVisit.Text);
         
         //Health Information Section
         file.WriteLine("-----HEALTH INFORMATION-----");
@@ -112,6 +114,11 @@ public partial class Form1 : Form
         }
         file.Close();
 
+        
+    }
+
+    private void btnNextPage_Click(object sender, EventArgs e)
+    {
         Form2 form2 = new Form2();
         form2.Mainform = this;
         form2.Show();
